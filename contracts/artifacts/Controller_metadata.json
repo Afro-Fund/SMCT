@@ -95,19 +95,6 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "_project",
-						"type": "address"
-					}
-				],
-				"name": "projectBlacklisted",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
 						"name": "_newProjectDeployed",
 						"type": "address"
 					},
@@ -119,6 +106,19 @@
 					}
 				],
 				"name": "projectCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_project",
+						"type": "address"
+					}
+				],
+				"name": "projectDisabled",
 				"type": "event"
 			},
 			{
@@ -544,10 +544,10 @@
 	},
 	"sources": {
 		"localhost/contracts/Blacklister.sol": {
-			"keccak256": "0xa3b68b51ddc090fbcbd2ed16353b419295ec9ef68a65a766b71aef4ca14301bd",
+			"keccak256": "0x315be3db5cba126487332475461300b2d840abdeb8037afb6e688c457667e19a",
 			"urls": [
-				"bzz-raw://a4e4cc09535aeddf890666acaca425ca75c478fae9f8f08f63e6f2e86e4b7a57",
-				"dweb:/ipfs/Qmb7ihiYhdhEhwBdQ1FyhNqhbkKZpMkkwDdMXFtbzMiDAv"
+				"bzz-raw://8aeef52a6570e72cb5b649d01aa972620686311c03a1bc008d65886993303a13",
+				"dweb:/ipfs/QmfSTwdweqCYe64SJD1KXxwhd9QSTt1bZtc2zoiQekcSsq"
 			]
 		},
 		"localhost/contracts/TokenFactory.sol": {

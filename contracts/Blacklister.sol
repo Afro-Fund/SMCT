@@ -36,7 +36,7 @@ import "./TokenFactory.sol";
 
     event adminDeactivated(address indexed _admin);
     event adminAdded(address indexed newAdmin);
-    event projectBlacklisted(address indexed _project);
+    event projectDisabled(address indexed _project);
     event adminDisabled(address indexed _admin);
     event newOwnerAdded(address indexed newOwner);
     event ownerRemoved(address indexed owner_);
@@ -146,6 +146,7 @@ import "./TokenFactory.sol";
         projectMaps[_project]._blackVotes++;
         if (projectMaps[_project]._blackVotes>=10){
             projectMaps[_project].active==false;
+            emit projectDisabled(_project);
         }
         return (true,projectMaps[_project]._blackVotes);
         
