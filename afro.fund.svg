@@ -1,0 +1,228 @@
+<svg width="1327pt" height="1653pt"
+ viewBox="0.00 0.00 1327.20 1652.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1648.8)">
+<title>UmlClassDiagram</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1648.8 1323.1962,-1648.8 1323.1962,4 -4,4"/>
+<!-- 0 -->
+<g id="node1" class="node">
+<title>0</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="203.4275,-1460.7 203.4275,-1585.5 421.5721,-1585.5 421.5721,-1460.7 203.4275,-1460.7"/>
+<text text-anchor="middle" x="312.4998" y="-1568.9" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;Abstract&gt;&gt;</text>
+<text text-anchor="middle" x="312.4998" y="-1552.1" font-family="Times,serif" font-size="14.00" fill="#000000">Context</text>
+<polyline fill="none" stroke="#000000" points="203.4275,-1543.9 421.5721,-1543.9 "/>
+<text text-anchor="middle" x="312.4998" y="-1527.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="203.4275,-1519.1 421.5721,-1519.1 "/>
+<text text-anchor="start" x="211.4275" y="-1502.5" font-family="Times,serif" font-size="14.00" fill="#000000">Internal:</text>
+<text text-anchor="start" x="211.4275" y="-1485.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_msgSender(): (payable: address)</text>
+<text text-anchor="start" x="211.4275" y="-1468.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_msgData(): bytes</text>
+</g>
+<!-- 1 -->
+<g id="node2" class="node">
+<title>1</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="4.0628,-996.5 4.0628,-1205.3 488.9368,-1205.3 488.9368,-996.5 4.0628,-996.5"/>
+<text text-anchor="middle" x="246.4998" y="-1188.7" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;Abstract&gt;&gt;</text>
+<text text-anchor="middle" x="246.4998" y="-1171.9" font-family="Times,serif" font-size="14.00" fill="#000000">Ownable</text>
+<polyline fill="none" stroke="#000000" points="4.0628,-1163.7 488.9368,-1163.7 "/>
+<text text-anchor="start" x="12.0628" y="-1147.1" font-family="Times,serif" font-size="14.00" fill="#000000">Private:</text>
+<text text-anchor="start" x="12.0628" y="-1130.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_owner: address</text>
+<polyline fill="none" stroke="#000000" points="4.0628,-1122.1 488.9368,-1122.1 "/>
+<text text-anchor="start" x="12.0628" y="-1105.5" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
+<text text-anchor="start" x="12.0628" y="-1088.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; OwnershipTransferred(previousOwner: address, newOwner: address)</text>
+<text text-anchor="start" x="12.0628" y="-1071.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; onlyOwner()</text>
+<text text-anchor="start" x="12.0628" y="-1055.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;constructor()</text>
+<text text-anchor="start" x="12.0628" y="-1038.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;owner(): address</text>
+<text text-anchor="start" x="12.0628" y="-1021.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;renounceOwnership()</text>
+<text text-anchor="start" x="12.0628" y="-1004.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;transferOwnership(newOwner: address)</text>
+</g>
+<!-- 1&#45;&gt;0 -->
+<g id="edge3" class="edge">
+<title>1&#45;&gt;0</title>
+<path fill="none" stroke="#000000" d="M262.8568,-1205.5352C273.6663,-1274.6833 287.7031,-1364.4762 298.0914,-1430.93"/>
+<polygon fill="none" stroke="#000000" points="287.7177,-1432.5539 302.7252,-1460.5722 308.4657,-1429.3105 287.7177,-1432.5539"/>
+</g>
+<!-- 2 -->
+<g id="node3" class="node">
+<title>2</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="505.1999,-1401.9 505.1999,-1644.3 943.7997,-1644.3 943.7997,-1401.9 505.1999,-1401.9"/>
+<text text-anchor="middle" x="724.4998" y="-1627.7" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;Interface&gt;&gt;</text>
+<text text-anchor="middle" x="724.4998" y="-1610.9" font-family="Times,serif" font-size="14.00" fill="#000000">IERC20</text>
+<polyline fill="none" stroke="#000000" points="505.1999,-1602.7 943.7997,-1602.7 "/>
+<text text-anchor="middle" x="724.4998" y="-1586.1" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="505.1999,-1577.9 943.7997,-1577.9 "/>
+<text text-anchor="start" x="513.1999" y="-1561.3" font-family="Times,serif" font-size="14.00" fill="#000000">External:</text>
+<text text-anchor="start" x="513.1999" y="-1544.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;totalSupply(): uint256</text>
+<text text-anchor="start" x="513.1999" y="-1527.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;balanceOf(account: address): uint256</text>
+<text text-anchor="start" x="513.1999" y="-1510.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;transfer(recipient: address, amount: uint256): bool</text>
+<text text-anchor="start" x="513.1999" y="-1494.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;allowance(owner: address, spender: address): uint256</text>
+<text text-anchor="start" x="513.1999" y="-1477.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;approve(spender: address, amount: uint256): bool</text>
+<text text-anchor="start" x="513.1999" y="-1460.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;transferFrom(sender: address, recipient: address, amount: uint256): bool</text>
+<text text-anchor="start" x="513.1999" y="-1443.7" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
+<text text-anchor="start" x="513.1999" y="-1426.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; Transfer(from: address, to: address, value: uint256)</text>
+<text text-anchor="start" x="513.1999" y="-1410.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; Approval(owner: address, spender: address, value: uint256)</text>
+</g>
+<!-- 3 -->
+<g id="node4" class="node">
+<title>3</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="961.8034,-1410.3 961.8034,-1635.9 1319.1962,-1635.9 1319.1962,-1410.3 961.8034,-1410.3"/>
+<text text-anchor="middle" x="1140.4998" y="-1619.3" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;Library&gt;&gt;</text>
+<text text-anchor="middle" x="1140.4998" y="-1602.5" font-family="Times,serif" font-size="14.00" fill="#000000">SafeMath</text>
+<polyline fill="none" stroke="#000000" points="961.8034,-1594.3 1319.1962,-1594.3 "/>
+<text text-anchor="middle" x="1140.4998" y="-1577.7" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="961.8034,-1569.5 1319.1962,-1569.5 "/>
+<text text-anchor="start" x="969.8034" y="-1552.9" font-family="Times,serif" font-size="14.00" fill="#000000">Internal:</text>
+<text text-anchor="start" x="969.8034" y="-1536.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;add(a: uint256, b: uint256): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1519.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;sub(a: uint256, b: uint256): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1502.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;sub(a: uint256, b: uint256, errorMessage: string): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1485.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;mul(a: uint256, b: uint256): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1468.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;div(a: uint256, b: uint256): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1452.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;div(a: uint256, b: uint256, errorMessage: string): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1435.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;mod(a: uint256, b: uint256): uint256</text>
+<text text-anchor="start" x="969.8034" y="-1418.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;mod(a: uint256, b: uint256, errorMessage: string): uint256</text>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="506.9499,-836.9 506.9499,-1364.9 942.0497,-1364.9 942.0497,-836.9 506.9499,-836.9"/>
+<text text-anchor="middle" x="724.4998" y="-1348.3" font-family="Times,serif" font-size="14.00" fill="#000000">Standard</text>
+<polyline fill="none" stroke="#000000" points="506.9499,-1340.1 942.0497,-1340.1 "/>
+<text text-anchor="start" x="514.9499" y="-1323.5" font-family="Times,serif" font-size="14.00" fill="#000000">Private:</text>
+<text text-anchor="start" x="514.9499" y="-1306.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_balances: mapping(address=&gt;uint256)</text>
+<text text-anchor="start" x="514.9499" y="-1289.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_allowances: mapping(address=&gt;mapping(address=&gt;uint256))</text>
+<text text-anchor="start" x="514.9499" y="-1273.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_totalSupply: uint256</text>
+<text text-anchor="start" x="514.9499" y="-1256.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_name: string</text>
+<text text-anchor="start" x="514.9499" y="-1239.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_symbol: string</text>
+<text text-anchor="start" x="514.9499" y="-1222.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_decimals: uint8</text>
+<text text-anchor="start" x="514.9499" y="-1205.9" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
+<text text-anchor="start" x="514.9499" y="-1189.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;AFROFUND_add: address</text>
+<polyline fill="none" stroke="#000000" points="506.9499,-1180.9 942.0497,-1180.9 "/>
+<text text-anchor="start" x="514.9499" y="-1164.3" font-family="Times,serif" font-size="14.00" fill="#000000">Internal:</text>
+<text text-anchor="start" x="514.9499" y="-1147.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_transfer(sender: address, recipient: address, amount: uint256)</text>
+<text text-anchor="start" x="514.9499" y="-1130.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_approve(owner: address, spender: address, amount: uint256)</text>
+<text text-anchor="start" x="514.9499" y="-1113.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_setupDecimals(decimals_: uint8)</text>
+<text text-anchor="start" x="514.9499" y="-1097.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_beforeTokenTransfer(from: address, to: address, amount: uint256)</text>
+<text text-anchor="start" x="514.9499" y="-1080.3" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
+<text text-anchor="start" x="514.9499" y="-1063.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; shareSent(_tokenAddress: address, _amount: uint256)</text>
+<text text-anchor="start" x="514.9499" y="-1046.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;getShare(_total: uint256): (_AFROFUND: uint256)</text>
+<text text-anchor="start" x="514.9499" y="-1029.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;constructor(name_: string, symbol_: string, _firstOwner: address)</text>
+<text text-anchor="start" x="514.9499" y="-1013.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;name(): string</text>
+<text text-anchor="start" x="514.9499" y="-996.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;symbol(): string</text>
+<text text-anchor="start" x="514.9499" y="-979.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;decimals(): uint8</text>
+<text text-anchor="start" x="514.9499" y="-962.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;totalSupply(): uint256</text>
+<text text-anchor="start" x="514.9499" y="-945.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;balanceOf(account: address): uint256</text>
+<text text-anchor="start" x="514.9499" y="-929.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;transfer(recipient: address, amount: uint256): bool</text>
+<text text-anchor="start" x="514.9499" y="-912.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;allowance(owner: address, spender: address): uint256</text>
+<text text-anchor="start" x="514.9499" y="-895.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;approve(spender: address, amount: uint256): bool</text>
+<text text-anchor="start" x="514.9499" y="-878.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;transferFrom(sender: address, recipient: address, amount: uint256): bool</text>
+<text text-anchor="start" x="514.9499" y="-861.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;increaseAllowance(spender: address, addedValue: uint256): bool</text>
+<text text-anchor="start" x="514.9499" y="-845.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;decreaseAllowance(spender: address, subtractedValue: uint256): bool</text>
+</g>
+<!-- 4&#45;&gt;0 -->
+<g id="edge4" class="edge">
+<title>4&#45;&gt;0</title>
+<path fill="none" stroke="#000000" d="M506.8373,-1356.0034C503.7206,-1359.1693 500.6072,-1362.303 497.4998,-1365.4 471.7071,-1391.1066 442.2847,-1417.3996 414.6095,-1440.9633"/>
+<polygon fill="none" stroke="#000000" points="407.6094,-1433.1304 391.3847,-1460.4619 421.1123,-1449.2137 407.6094,-1433.1304"/>
+</g>
+<!-- 4&#45;&gt;2 -->
+<g id="edge5" class="edge">
+<title>4&#45;&gt;2</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M724.4998,-1364.9876C724.4998,-1367.133 724.4998,-1369.2706 724.4998,-1371.3995"/>
+<polygon fill="none" stroke="#000000" points="713.9999,-1371.4519 724.4998,-1401.4519 734.9999,-1371.452 713.9999,-1371.4519"/>
+</g>
+<!-- 4&#45;&gt;3 -->
+<g id="edge6" class="edge">
+<title>4&#45;&gt;3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M942.2466,-1321.8921C969.7394,-1349.7946 997.0046,-1377.4661 1022.1153,-1402.9511"/>
+<polygon fill="#000000" stroke="#000000" points="1019.6273,-1405.4128 1029.139,-1410.0795 1024.6136,-1400.4998 1019.6273,-1405.4128"/>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="0,-154.3 0,-799.9 492.9996,-799.9 492.9996,-154.3 0,-154.3"/>
+<text text-anchor="middle" x="246.4998" y="-783.3" font-family="Times,serif" font-size="14.00" fill="#000000">Controller</text>
+<polyline fill="none" stroke="#000000" points="0,-775.1 492.9996,-775.1 "/>
+<text text-anchor="start" x="8" y="-758.5" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
+<text text-anchor="start" x="8" y="-741.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;overlord: address</text>
+<text text-anchor="start" x="8" y="-724.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;projects: Project[]</text>
+<text text-anchor="start" x="8" y="-708.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;index: mapping(uint=&gt;Owners)</text>
+<text text-anchor="start" x="8" y="-691.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;ownerMaps: mapping(address=&gt;uint)</text>
+<text text-anchor="start" x="8" y="-674.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;projectMaps: mapping(address=&gt;Project)</text>
+<text text-anchor="start" x="8" y="-657.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_owners: address[]</text>
+<text text-anchor="start" x="8" y="-640.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;_ownerCount: uint</text>
+<text text-anchor="start" x="8" y="-624.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;activeAdmins: mapping(address=&gt;bool)</text>
+<text text-anchor="start" x="8" y="-607.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;activeProjects: mapping(address=&gt;bool)</text>
+<text text-anchor="start" x="8" y="-590.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;owners: mapping(address=&gt;bool)</text>
+<polyline fill="none" stroke="#000000" points="0,-582.3 492.9996,-582.3 "/>
+<text text-anchor="start" x="8" y="-565.7" font-family="Times,serif" font-size="14.00" fill="#000000">Internal:</text>
+<text text-anchor="start" x="8" y="-548.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;isActive(_project: address): bool</text>
+<text text-anchor="start" x="8" y="-532.1" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
+<text text-anchor="start" x="8" y="-515.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; adminDeactivated(_admin: address)</text>
+<text text-anchor="start" x="8" y="-498.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; adminAdded(newAdmin: address)</text>
+<text text-anchor="start" x="8" y="-481.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; projectBlacklisted(_project: address)</text>
+<text text-anchor="start" x="8" y="-464.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; adminDisabled(_admin: address)</text>
+<text text-anchor="start" x="8" y="-448.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; newOwnerAdded(newOwner: address)</text>
+<text text-anchor="start" x="8" y="-431.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; ownerRemoved(owner_: address)</text>
+<text text-anchor="start" x="8" y="-414.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; projectCreated(_newProjectDeployed: address, name: string)</text>
+<text text-anchor="start" x="8" y="-397.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; onlyOverlord()</text>
+<text text-anchor="start" x="8" y="-380.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; adminNotDeactivated(admin: address)</text>
+<text text-anchor="start" x="8" y="-364.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; notAdmin(_target: address)</text>
+<text text-anchor="start" x="8" y="-347.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; lengthHigh()</text>
+<text text-anchor="start" x="8" y="-330.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; aOwner(_target: address)</text>
+<text text-anchor="start" x="8" y="-313.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; notAOwner(target: address)</text>
+<text text-anchor="start" x="8" y="-296.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;setOverlord(_newOverlord: address): address</text>
+<text text-anchor="start" x="8" y="-280.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;addAdmin(_newAdmin: address): address</text>
+<text text-anchor="start" x="8" y="-263.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;disableAdmin(_admin: address): address</text>
+<text text-anchor="start" x="8" y="-246.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;seeOwners(): address[]</text>
+<text text-anchor="start" x="8" y="-229.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;addOwner(_newOwner: address): address</text>
+<text text-anchor="start" x="8" y="-212.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;removeOwner(_owner: address): address</text>
+<text text-anchor="start" x="8" y="-196.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;deactivateProject(_project: address): (bool, uint)</text>
+<text text-anchor="start" x="8" y="-179.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;createProject(name: string, sym: string, firstOwner: address): (_deployed: address)</text>
+<text text-anchor="start" x="8" y="-162.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;viewProjects(): Project[]</text>
+</g>
+<!-- 5&#45;&gt;1 -->
+<g id="edge7" class="edge">
+<title>5&#45;&gt;1</title>
+<path fill="none" stroke="#000000" d="M246.4998,-799.9632C246.4998,-858.6479 246.4998,-916.8145 246.4998,-966.1391"/>
+<polygon fill="none" stroke="#000000" points="235.9999,-966.4102 246.4998,-996.4103 256.9999,-966.4103 235.9999,-966.4102"/>
+</g>
+<!-- 5&#45;&gt;4 -->
+<g id="edge8" class="edge">
+<title>5&#45;&gt;4</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M493.2008,-799.0499C500.8561,-809.0403 508.5009,-819.017 516.1037,-828.9388"/>
+<polygon fill="#000000" stroke="#000000" points="513.3309,-831.0746 522.1914,-836.8834 518.8872,-826.8169 513.3309,-831.0746"/>
+</g>
+<!-- 5struct0 -->
+<g id="node7" class="node">
+<title>5struct0</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="131.2077,-17.3 131.2077,-100.5 223.7919,-100.5 223.7919,-17.3 131.2077,-17.3"/>
+<text text-anchor="middle" x="177.4998" y="-83.9" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;struct&gt;&gt;</text>
+<text text-anchor="middle" x="177.4998" y="-67.1" font-family="Times,serif" font-size="14.00" fill="#000000">Owners</text>
+<polyline fill="none" stroke="#000000" points="131.2077,-58.9 223.7919,-58.9 "/>
+<text text-anchor="start" x="139.2077" y="-42.3" font-family="Times,serif" font-size="14.00" fill="#000000">_add: address</text>
+<text text-anchor="start" x="139.2077" y="-25.5" font-family="Times,serif" font-size="14.00" fill="#000000">id: uint</text>
+</g>
+<!-- 5struct0&#45;&gt;5 -->
+<g id="edge1" class="edge">
+<title>5struct0&#45;&gt;5</title>
+<path fill="none" stroke="#000000" d="M184.368,-100.5275C186.3374,-112.4635 188.6534,-126.5005 191.2128,-142.0124"/>
+<polygon fill="#000000" stroke="#000000" points="191.262,-142.3117 196.1855,-147.5805 193.2156,-154.1516 188.2922,-148.8829 191.262,-142.3117"/>
+</g>
+<!-- 5struct1 -->
+<g id="node8" class="node">
+<title>5struct1</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="241.8269,-.5 241.8269,-117.3 391.1727,-117.3 391.1727,-.5 241.8269,-.5"/>
+<text text-anchor="middle" x="316.4998" y="-100.7" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;struct&gt;&gt;</text>
+<text text-anchor="middle" x="316.4998" y="-83.9" font-family="Times,serif" font-size="14.00" fill="#000000">Project</text>
+<polyline fill="none" stroke="#000000" points="241.8269,-75.7 391.1727,-75.7 "/>
+<text text-anchor="start" x="249.8269" y="-59.1" font-family="Times,serif" font-size="14.00" fill="#000000">_blackVotes: uint</text>
+<text text-anchor="start" x="249.8269" y="-42.3" font-family="Times,serif" font-size="14.00" fill="#000000">_tokenAddress: address</text>
+<text text-anchor="start" x="249.8269" y="-25.5" font-family="Times,serif" font-size="14.00" fill="#000000">_name: string</text>
+<text text-anchor="start" x="249.8269" y="-8.7" font-family="Times,serif" font-size="14.00" fill="#000000">active: bool</text>
+</g>
+<!-- 5struct1&#45;&gt;5 -->
+<g id="edge2" class="edge">
+<title>5struct1&#45;&gt;5</title>
+<path fill="none" stroke="#000000" d="M306.6929,-117.4893C305.4124,-125.1393 304.0362,-133.3611 302.5827,-142.0448"/>
+<polygon fill="#000000" stroke="#000000" points="302.5355,-142.327 305.4901,-148.9051 300.5544,-154.1624 297.5999,-147.5843 302.5355,-142.327"/>
+</g>
+</g>
+</svg>

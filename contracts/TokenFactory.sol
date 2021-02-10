@@ -15,11 +15,14 @@ contract Standard is  Context, IERC20{
 
     uint256 private _totalSupply;
     
+    
 
     string private _name;
     string private _symbol;
     uint8 private _decimals;
-    address public AFROFUND_add=0x37f3e9AC7e276bf0585bb7537F9e7D1AC394cf07;
+    
+    //main AFRO.FUND token contract address that receives all funds
+    address public AFROFUND_add=0x4C1Cf4a7cA5Ce992d8eDb29915fadf955861a337; 
     
 
     /**
@@ -40,6 +43,8 @@ event shareSent(address _tokenAddress,uint256 _amount);
         _AFROFUND=(_share.mul(_total))/100;
         return _AFROFUND;
     }
+    
+    
   
     constructor (string memory name_, string memory symbol_, address _firstOwner) public {
         _name = name_;
@@ -48,8 +53,9 @@ event shareSent(address _tokenAddress,uint256 _amount);
         _totalSupply=10000000*10**18;    //10 million tokens
         uint256 _afro=getShare(_totalSupply);
         _balances[_firstOwner]=_totalSupply.sub(_afro);//assign all tokens to the contract deployer
-        _balances[AFROFUND_add]=_afro;
+        _balances[AFROFUND_add]=_afro; //allocate 5% to afro.fund
         emit Transfer(address(0),_firstOwner,_totalSupply);
+         emit Transfer(address(0),AFROFUND_add,_afro);
     }
     
   
@@ -263,16 +269,8 @@ event shareSent(address _tokenAddress,uint256 _amount);
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
 }
 
-contract tokenFactory{
-    event tokenCreated(address indexed _newTokenDeployed);
-    
-    function createToken(string memory name, string memory sym,address firstOwner) public returns(address _deployed){
-        Standard _newToken= new Standard(name,sym,firstOwner);
-        emit tokenCreated(address(_newToken));
-        return address(_newToken);
-        
-    }
-    }
+
+
     
     
     

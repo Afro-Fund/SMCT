@@ -415,10 +415,10 @@
 	},
 	"sources": {
 		"localhost/contracts/TokenFactory.sol": {
-			"keccak256": "0x5e6f99d910e4cbba67b1a2a50ce478c68642d4939f62ef7181d414fefed30a1f",
+			"keccak256": "0xe5d0cebcf19a2f7a3112291c8f28b7e764c43f4a1ea4b1c4489875356d56d441",
 			"urls": [
-				"bzz-raw://be7d61ad2a6cfb6102261dbc9a62d06378b4b77d88e8304120e02061ca5d041a",
-				"dweb:/ipfs/Qmbi83XNCPya38irgTbPnADondzN9KfVsMBfBSBocNduJS"
+				"bzz-raw://d37531a817840b92c205e760b99918f8a458f1ba746ec6d0c4f17b729baa1562",
+				"dweb:/ipfs/Qme8WdEN6nQikuA7YuRSa9n38w6nc4HsN7cKWYFyTXdDTR"
 			]
 		},
 		"localhost/contracts/zep/contracts/GSN/Context.sol": {
