@@ -34,7 +34,7 @@ import "./TokenFactory.sol";
     mapping(address=>bool) public activeProjects;
     mapping(address=>bool) public owners;
 
-    event adminDeactivated(address indexed _admin);
+    
     event adminAdded(address indexed newAdmin);
     event projectDisabled(address indexed _project);
     event adminDisabled(address indexed _admin);

@@ -36,7 +36,6 @@ contract Standard is  Context, IERC20{
      */
      
      
-event shareSent(address _tokenAddress,uint256 _amount);
       //calculates the 5% of AFRO.FUND from a given total supply
     function getShare(uint256 _total) public pure returns(uint256 _AFROFUND){
         uint256 _share=5;
@@ -54,8 +53,9 @@ event shareSent(address _tokenAddress,uint256 _amount);
         uint256 _afro=getShare(_totalSupply);
         _balances[_firstOwner]=_totalSupply.sub(_afro);//assign all tokens to the contract deployer
         _balances[AFROFUND_add]=_afro; //allocate 5% to afro.fund
-        emit Transfer(address(0),_firstOwner,_totalSupply);
+        emit Transfer(address(0),_firstOwner,_balances[_firstOwner]);
          emit Transfer(address(0),AFROFUND_add,_afro);
+
     }
     
   

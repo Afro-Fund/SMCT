@@ -47,19 +47,6 @@
 						"type": "address"
 					}
 				],
-				"name": "adminDeactivated",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_admin",
-						"type": "address"
-					}
-				],
 				"name": "adminDisabled",
 				"type": "event"
 			},
@@ -544,17 +531,17 @@
 	},
 	"sources": {
 		"localhost/contracts/Blacklister.sol": {
-			"keccak256": "0x315be3db5cba126487332475461300b2d840abdeb8037afb6e688c457667e19a",
+			"keccak256": "0x48412384489b392dfa38ca0b7fe1ef7754661a0778d47b060229269245ea08f4",
 			"urls": [
-				"bzz-raw://8aeef52a6570e72cb5b649d01aa972620686311c03a1bc008d65886993303a13",
-				"dweb:/ipfs/QmfSTwdweqCYe64SJD1KXxwhd9QSTt1bZtc2zoiQekcSsq"
+				"bzz-raw://5f159ca1eb7d79f8301b05f958a8c9c42f74ddb53e2ef1bc389ae0f2e32dbf21",
+				"dweb:/ipfs/QmRRgjB8H8gCnng6GqbPCEmmfqGbqquoW3uiXGcjNx3gif"
 			]
 		},
 		"localhost/contracts/TokenFactory.sol": {
-			"keccak256": "0xe5d0cebcf19a2f7a3112291c8f28b7e764c43f4a1ea4b1c4489875356d56d441",
+			"keccak256": "0x84ebb67e986563d7a3833f76ad63236cf74a06a3e488bb74bbe1fe1587223a1f",
 			"urls": [
-				"bzz-raw://d37531a817840b92c205e760b99918f8a458f1ba746ec6d0c4f17b729baa1562",
-				"dweb:/ipfs/Qme8WdEN6nQikuA7YuRSa9n38w6nc4HsN7cKWYFyTXdDTR"
+				"bzz-raw://2f8a30e376253b0ba3abdb29c1f8007756a2927a2750a218b91c540b26298b42",
+				"dweb:/ipfs/QmaHvonqcGfStmdA1BxYEHJdFgrztAEySNF4U6sBiaZcbH"
 			]
 		},
 		"localhost/contracts/zep/contracts/GSN/Context.sol": {
