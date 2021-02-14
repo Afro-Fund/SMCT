@@ -57,7 +57,7 @@ event tokenTransferredOut(address indexed tokenAdd, uint256 _amountOut);
      * All three of these values are immutable: they can only be set once during
      * construction.
      */
-    constructor (string memory name_, string memory symbol_) public {
+    constructor (string memory name_, string memory symbol_)  {
         _name = name_;
         _symbol = symbol_;
         _decimals = 18;

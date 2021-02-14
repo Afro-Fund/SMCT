@@ -6,7 +6,7 @@ import "./zep/contracts/token/ERC20/IERC20.sol";
 import "./zep/contracts/math/SafeMath.sol";
 import "./zep/contracts/access/Ownable.sol";
 
-contract Standard is  Context, IERC20{
+contract Standard is  IERC20,Context{
   using SafeMath for uint256;
 
     mapping (address => uint256) private _balances;
@@ -22,7 +22,7 @@ contract Standard is  Context, IERC20{
     uint8 private _decimals;
     
     //main AFRO.FUND token contract address that receives all funds
-    address public AFROFUND_add=0x4C1Cf4a7cA5Ce992d8eDb29915fadf955861a337; 
+    address public constant AFROFUND_add=0x0a4A7432F43b3d8b21932e0571A68F804964e39c; 
     
 
     /**
@@ -45,7 +45,7 @@ contract Standard is  Context, IERC20{
     
     
   
-    constructor (string memory name_, string memory symbol_, address _firstOwner) public {
+    constructor (string memory name_, string memory symbol_, address _firstOwner)  {
         _name = name_;
         _symbol = symbol_;
         _decimals = 18;

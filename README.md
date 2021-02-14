@@ -21,10 +21,39 @@ This is the contract that controls token allocation and acts as the project toke
 |:--------:|----------:|------|
 |     |       |       |
 
+## Functions 
+
+- Constructor 
+
+```solidity
+ constructor (string memory name_, string memory symbol_, address _firstOwner)  {
+        _name = name_;
+        _symbol = symbol_;
+        _decimals = 18;
+        _totalSupply=10000000*10**18;    //10 million tokens
+        uint256 _afro=getShare(_totalSupply);
+        _balances[_firstOwner]=_totalSupply.sub(_afro);//assign all tokens to the contract deployer
+        _balances[AFROFUND_add]=_afro; //allocate 5% to afro.fund
+        emit Transfer(address(0),_firstOwner,_balances[_firstOwner]);
+         emit Transfer(address(0),AFROFUND_add,_afro);
+
+    }
+    ```
+    `name_`: name of project, also used to mint the project token
+    `symbol_`: token symbol used for the project
+    `_firstOwner`: 95% of totalSupply will be minted to this address
+     The function emits two events called `Transfer` which shows the token transfers to `AFROFUND_add` and `_firstOwner`
+
+ - transfer: allows tokens to be transferred from one account to another
+ - approve: allows the caller to allow another address to spend tokens on his behalf
+ - getShare: a `pure` function used to calculate 5% of totalSupply
+
+
+
 
 ## Blacklister.sol
 
-THis is one of the most important important contracts since it controls all access roles that are needed to govern over created projects. it inherits for `TokenFactory.sol` to create/initialize projects [here](https://github.com/Afro-Fund/SMCT/blob/544a5ce8a683a2d059795b209f24a1bae61f1477/contracts/Blacklister.sol#L157). 
+This is one of the most important important contracts since it controls all access roles that are needed to govern over created projects. it inherits for `TokenFactory.sol` to create/initialize projects [here](https://github.com/Afro-Fund/SMCT/blob/544a5ce8a683a2d059795b209f24a1bae61f1477/contracts/Blacklister.sol#L157). 
 
 The roles and privileges are explained below
 
@@ -33,7 +62,7 @@ The roles and privileges are explained below
 | _owner    | 1       | Has the ability to add `owners`|
 | owners   | 3        |   They have the ability to change the `overlord`   |
 | overlord      | 1         |   Has the ability to add and disable `admins`   |
-| admins      | infinite         |   they can vote for a created project to be blacklisted. A project is blacklisted if 10 or more admins vote for it to be blacklisted   |
+| admins      | infinite         |   They can vote for a created project to be blacklisted. A project is blacklisted if 10 or more admins vote for it to be blacklisted   |
 
 ## Other Features
 
@@ -66,7 +95,7 @@ The roles and privileges are explained below
 
 `Owners`: primarily used to track the owner array length
 
-
+ 
 ## Other important functions
 ```solidity
    function createProject(string memory name, string memory sym,address firstOwner) public returns(address _deployed){
@@ -81,7 +110,12 @@ The roles and privileges are explained below
         return address(_newToken);
         
 }
-````
+```
 
-Allows anybody to start a project 
+Allows anybody to start a project given the `name`(will be used to mint the project token ) , `symbol` and `firstOwner` (the address where the totalSupply will be minted to)
+
+
+
+
+
 
